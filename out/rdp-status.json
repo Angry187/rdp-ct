@@ -5,31 +5,31 @@
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "cpu_threads": 4,
     "ram_gb": 16.0,
-    "disk_free_gb": 79.7
+    "cpu_threads": 4,
+    "disk_free_gb": 79.4
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-11-03T09:21:22Z",
-  "expires_at": "2026-11-03T15:03:22Z",
+  "started_at": "2026-11-03T11:41:46Z",
+  "expires_at": "2026-11-03T17:23:46Z",
   "duration_menit": 342,
   "run_id": "41571610535",
-  "run_attempt": "2",
+  "run_attempt": "3",
   "run_number": "5",
   "run_url": "https://github.com/Angry187/rdp-ct/actions/runs/41571610535",
   "mode": "bersih+win10",
   "persist": {
     "restored": true,
-    "files": 154,
     "profile": "C:\\Users\\xyadmin",
+    "files": 169,
     "source": "xyrdp-state.7z.enc"
   },
   "storage": {
-    "note": "dilewati sesuai config",
-    "boost": "skip"
+    "boost": "skip",
+    "note": "dilewati sesuai config"
   },
   "fps_boost": {
     "status": "ok",
@@ -44,9 +44,9 @@
     ],
     "skipped": [],
     "applied_count": 7,
-    "elapsed_sec": 1.4,
+    "elapsed_sec": 1.5,
     "note": "Tweak rendering RDP & scheduler OS. Tidak menaikkan FPS game 3D tanpa GPU fisik; Mesa3D/WARP tetap dipakai.",
-    "updated_at": "2026-11-03T09:21:33.7174623Z"
+    "updated_at": "2026-11-03T11:42:02.2082818Z"
   },
   "win10": {
     "look": "ok",
@@ -57,40 +57,40 @@
     "note": "Tampilan Windows 10 (UI Windows Server 2022 = kernel/UI Windows 10 21H2)"
   },
   "grafis": {
-    "vulkan": "lavapipe 1.3 (CPU)",
-    "mesa": "26.2.6",
-    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
+    "adapters": "Microsoft Hyper-V Video",
     "mode": "software",
+    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
+    "mesa": "26.2.6",
     "path": "C:\\XyRDP\\grafis\\mesa-x64",
-    "adapters": "Microsoft Hyper-V Video"
+    "vulkan": "lavapipe 1.3 (CPU)"
   },
   "games": {
-    "blender": {
-      "status": "ready",
-      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1"
-    },
     "ets2": {
-      "status": "ready",
-      "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1"
-    },
-    "roblox": {
-      "status": "ready-antivm",
-      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1"
+      "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1",
+      "status": "ready"
     },
     "minecraft_java": {
       "opengl46": false,
-      "status": "ready",
-      "official_exe": true,
       "prismlauncher": true,
+      "official_exe": true,
+      "status": "ready",
       "tlauncher_jar": true
     },
     "memu": {
-      "status": "ready",
-      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1"
+      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1",
+      "status": "ready"
+    },
+    "blender": {
+      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1",
+      "status": "ready"
     },
     "fivem": {
-      "status": true,
-      "sound": true
+      "sound": true,
+      "status": true
+    },
+    "roblox": {
+      "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1",
+      "status": "ready-antivm"
     }
   },
   "extras": {
@@ -103,8 +103,8 @@
   },
   "tools_hub": {
     "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
-    "auto_start": true,
-    "installed": true
+    "installed": true,
+    "auto_start": true
   },
   "xydesk": {
     "host": "ok",
@@ -124,21 +124,21 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
-    "mode": "tailscale",
     "tailscale": {
-      "status": "ok",
-      "magicdns": "rdpfree.tailebd6b9.ts.net.",
-      "ip": "100.127.8.109",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "hostname": "rdpfree"
+      "hostname": "rdpfree",
+      "magicdns": "rdpfree.tailebd6b9.ts.net.",
+      "status": "ok",
+      "ip": "100.69.33.42"
     },
+    "mode": "tailscale",
     "tunnel": {
-      "address": "100.127.8.109:3389",
-      "host": "100.127.8.109",
       "port": 3389,
       "outside": "tailscale",
+      "host": "100.69.33.42",
+      "status": "ok",
       "selftest": "ok",
-      "status": "ok"
+      "address": "100.69.33.42:3389"
     }
   }
 }
