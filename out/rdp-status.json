@@ -1,31 +1,31 @@
 {
   "active": true,
-  "hostname": "rdpfree-19",
+  "hostname": "rdpfree-20",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Native Windows",
   "hardware": {
-    "cpu_threads": 4,
     "disk_free_gb": 80.1,
-    "ram_gb": 16.0
+    "ram_gb": 16.0,
+    "cpu_threads": 4
   },
   "rdp_port": 3389,
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-11-11T06:44:53Z",
-  "expires_at": "2026-11-11T12:26:53Z",
+  "started_at": "2026-11-11T12:27:45Z",
+  "expires_at": "2026-11-11T18:09:45Z",
   "duration_menit": 342,
-  "run_id": "42974474219",
+  "run_id": "43020385252",
   "run_attempt": "1",
-  "run_number": "19",
-  "run_url": "https://github.com/Angry187/rdp-ct/actions/runs/42974474219",
+  "run_number": "20",
+  "run_url": "https://github.com/Angry187/rdp-ct/actions/runs/43020385252",
   "mode": "bersih+win10",
   "persist": {
-    "profile": "C:\\Users\\xyadmin",
+    "restored": true,
     "files": 131,
     "source": "xyrdp-state.7z.enc",
-    "restored": true
+    "profile": "C:\\Users\\xyadmin"
   },
   "storage": {
     "boost": "skip",
@@ -46,7 +46,7 @@
     "applied_count": 7,
     "elapsed_sec": 1.4,
     "note": "Tweak rendering RDP & scheduler OS. Tidak menaikkan FPS game 3D tanpa GPU fisik; Mesa3D/WARP tetap dipakai.",
-    "updated_at": "2026-11-11T06:45:03.9646756Z"
+    "updated_at": "2026-11-11T12:27:57.4932359Z"
   },
   "win10": {
     "look": "ok",
@@ -57,45 +57,45 @@
     "note": "Tampilan Windows 10 (UI Windows Server 2022 = kernel/UI Windows 10 21H2)"
   },
   "media": {
-    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
-    "wallpaper": "xyverse_configured_for_user_logon",
     "audio_output": "rdp_playback_enabled",
-    "microphone": "rdp_capture_enabled"
+    "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
+    "microphone": "rdp_capture_enabled",
+    "wallpaper": "xyverse_configured_for_user_logon"
   },
   "grafis": {
-    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
+    "path": "C:\\XyRDP\\grafis\\mesa-x64",
     "mode": "software",
+    "opengl": "4.6 (Mesa llvmpipe system-wide x64/x86 + OpenGL ES 3.2)",
     "adapters": "Microsoft Hyper-V Video",
-    "mesa": "26.2.6",
     "vulkan": "lavapipe 1.3 (CPU)",
-    "path": "C:\\XyRDP\\grafis\\mesa-x64"
+    "mesa": "26.2.6"
   },
   "games": {
-    "blender": {
-      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1",
-      "status": "ready"
-    },
     "minecraft_java": {
-      "official_exe": true,
-      "status": "ready",
+      "opengl46": false,
       "prismlauncher": true,
       "tlauncher_jar": true,
-      "opengl46": false
-    },
-    "ets2": {
-      "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1",
+      "official_exe": true,
       "status": "ready"
     },
     "fivem": {
       "sound": true,
       "status": true
     },
+    "memu": {
+      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1",
+      "status": "ready"
+    },
     "roblox": {
       "launcher": "C:\\Games\\Roblox\\Launch-Roblox-AntiVM.ps1",
       "status": "ready-antivm"
     },
-    "memu": {
-      "launcher": "C:\\Games\\MEmu\\Launch-MEmu.ps1",
+    "ets2": {
+      "launcher": "C:\\Games\\ETS2\\Launch-ETS2-Free.ps1",
+      "status": "ready"
+    },
+    "blender": {
+      "launcher": "C:\\Games\\Blender\\Launch-Blender.ps1",
       "status": "ready"
     }
   },
@@ -108,9 +108,9 @@
     "admin": true
   },
   "tools_hub": {
-    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe",
     "installed": true,
-    "auto_start": true
+    "auto_start": true,
+    "exe": "C:\\XyRDP\\tools\\XyDeskDashboard.exe"
   },
   "xydesk": {
     "host": "ok",
@@ -130,20 +130,20 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "akses": {
-    "tailscale": {
-      "magicdns": "rdpfree.tailebd6b9.ts.net.",
-      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "hostname": "rdpfree",
-      "status": "ok",
-      "ip": "100.127.253.84"
-    },
     "tunnel": {
-      "status": "ok",
       "outside": "tailscale",
       "selftest": "ok",
-      "host": "100.127.253.84",
-      "address": "100.127.253.84:3389",
-      "port": 3389
+      "status": "ok",
+      "port": 3389,
+      "address": "100.127.132.102:3389",
+      "host": "100.127.132.102"
+    },
+    "tailscale": {
+      "ip": "100.127.132.102",
+      "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
+      "hostname": "rdpfree",
+      "magicdns": "rdpfree.tailebd6b9.ts.net.",
+      "status": "ok"
     },
     "mode": "tailscale"
   }
